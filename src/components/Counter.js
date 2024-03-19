@@ -1,9 +1,9 @@
-export default function Counter({ curr, increaseByOne }) {
+export default function Counter({ curr, handleIncrement, handleDecrement }) {
     return (
         <>
-            <h2>{curr}
-                <button onClick={increaseByOne}>+</button>
-            </h2>
+            <button onClick={handleDecrement}>-</button>
+            <h2>{curr}</h2>
+            <button onClick={handleIncrement}>+</button>
 
         </>
     )
